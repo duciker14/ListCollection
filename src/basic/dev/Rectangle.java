@@ -2,9 +2,16 @@ package basic.dev;
 
 public class Rectangle implements Shape {
 	String name;
-	float canhA, canhB;
+	double canhA, canhB;
 	
 	
+
+	public Rectangle(String name, double canhA, double canhB) {
+		super();
+		this.name = name;
+		this.canhA = canhA;
+		this.canhB = canhB;
+	}
 
 	public String getName() {
 		return name;
@@ -14,7 +21,7 @@ public class Rectangle implements Shape {
 		this.name = name;
 	}
 
-	public float getCanhA() {
+	public double getCanhA() {
 		return canhA;
 	}
 
@@ -22,7 +29,7 @@ public class Rectangle implements Shape {
 		this.canhA = canhA;
 	}
 
-	public float getCanhB() {
+	public double getCanhB() {
 		return canhB;
 	}
 
@@ -38,13 +45,13 @@ public class Rectangle implements Shape {
 	}
 
 	@Override
-	public float chuVi() {
+	public double chuVi() {
 		// TODO Auto-generated method stub
 		return 2*(canhA+canhB);
 	}
 
 	@Override
-	public float dienTich() {
+	public double dienTich() {
 		// TODO Auto-generated method stub
 		return canhA*canhB;
 	}

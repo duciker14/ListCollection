@@ -2,10 +2,10 @@ package basic.dev;
 
 public class Triangle implements Shape{
 	String name;
-	float canhA, canhB,canhC;
+	double canhA, canhB,canhC;
 	
 	
-	public Triangle(String name, float canhA, float canhB, float canhC) {
+	public Triangle(String name, double canhA, double canhB, double canhC) {
 		super();
 		this.name = name;
 		this.canhA = canhA;
@@ -24,7 +24,7 @@ public class Triangle implements Shape{
 	}
 
 
-	public float getCanhA() {
+	public double getCanhA() {
 		return canhA;
 	}
 
@@ -34,7 +34,7 @@ public class Triangle implements Shape{
 	}
 
 
-	public float getCanhB() {
+	public double getCanhB() {
 		return canhB;
 	}
 
@@ -44,7 +44,7 @@ public class Triangle implements Shape{
 	}
 
 
-	public float getCanhC() {
+	public double getCanhC() {
 		return canhC;
 	}
 
@@ -55,15 +55,15 @@ public class Triangle implements Shape{
 
 
 	@Override
-	public float chuVi() {
+	public double chuVi() {
 		return canhA + canhB + canhC;
 		
 	}
 
 	@Override
-	public float dienTich() {
-		float p = (canhA + canhB + canhC)/3;
-		return (float) Math.sqrt(p*(p-canhA)*(p-canhB)*(p-canhC));
+	public double dienTich() {
+		double p = (canhA + canhB + canhC)/2;
+		return (double) Math.sqrt(p*(p-canhA)*(p-canhB)*(p-canhC));
 		
 	}
 	@Override

@@ -2,11 +2,11 @@ package basic.dev;
 
 public class Circle implements Shape {
 	String name;
-	float banKinh;
+	double banKinh;
 	
 	
 
-	public Circle(String name, float banKinh) {
+	public Circle(String name, double banKinh) {
 		super();
 		this.name = name;
 		this.banKinh = banKinh;
@@ -26,9 +26,7 @@ public class Circle implements Shape {
 
 
 
-	public float getBanKinh() {
-		return banKinh;
-	}
+	
 
 
 
@@ -39,13 +37,13 @@ public class Circle implements Shape {
 
 
 	@Override
-	public float chuVi() {
+	public double chuVi() {
 		// TODO Auto-generated method stub
 		return (float) (2*Math.PI*banKinh);
 	}
 
 	@Override
-	public float dienTich() {
+	public double dienTich() {
 		return (float) Math.PI*banKinh*banKinh;
 	}
 	@Override
